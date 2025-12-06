@@ -86,8 +86,6 @@ const { data, error } = await supabase.rpc('cast_vote', {
   p_otp: otp,
   p_candidate_id: candidateId
 });
-```
-Recommended approach: call a Next.js API route (server-side) which invokes the RPC with the Supabase service role key. This keeps sensitive flows and elevated privileges server-side.
 
 ## Important environment variables
 - NEXT_PUBLIC_SUPABASE_URL (client)
